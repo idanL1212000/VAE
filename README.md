@@ -1,12 +1,11 @@
 <h2>Supervised Classification</h2>
 
 <img src="./results/cnn/validation_metrics_CNN.png"
-style="width:7.1875in;height:2.78125in" /><img src="./g5k5uwcj.png"
-style="width:6.27083in;height:3.76042in" />
+style="width:7.1875in;height:2.78125in" />
 <p>The total loss and MSE decrease significantly in the first 10 epochs and then plateau, 
-indicating successful training. 
+indicating successful training./n 
 The KL divergence increases steadily and plateaus, as wanted with better latent 
-regularization. 
+regularization./n 
 The gap between training and validation loss is small, pointing to no harsh overfitting.</p> 
 
 <h2>VAE</h2>
