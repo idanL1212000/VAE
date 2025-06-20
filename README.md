@@ -64,53 +64,11 @@ reasonable latent vectors and in the amortized we even get good
 predictions.</p>
 
 <h3>Computing the log-probability of an image</h3>
+<h4>Amortized</h4>
+<img src="./results/amortized/digit_log_probabilities.png"
+style="width:7.1875in;height:2.78125in" />
+<h4>Latent Optimization</h4>
+<img src="./results/latent_optimization/digit_log_probabilities.png"
+style="width:7.1875in;height:2.78125in" />
 
-> <img src="./ip4l4l03.png" style="width:6.27083in;height:1.25in" /><u>Latent
-> Optimization</u>
->
-> <u>Amortized</u> <u>Latent Optimization</u>
 
-\(b\) Average log-probabilities per digit
-
-> 0 : -217.58871459960938 1 : -68.08492279052734 2 : -295.7515869140625
-> 3 : -238.4097900390625 4 : -206.52548217773438 5 : -301.0711975097656
-> 6 : -231.7938690185547 7 : -144.23634338378906 8 : -295.1378479003906
->
-> 9 : -161.9153289794922
-
--514.7296142578125 -137.36550903320312 -484.9649963378906
--428.3619079589844 -330.36676025390625 -484.19464111328125
--463.27215576171875 -324.5142517089844 -478.99755859375
-
--375.8153991699219
-
-Digit 1 has the highest (least negative) log-probability in both
-cases.Digit 1 has a very consistent and simple structure (a vertical
-line), which the VAE can model well, leading to higher
-log-probability.More complex digits (like 2, 5, 8) show greater
-variability and are harder to model, resulting in lower
-
-log-probabilities.
-
-\(c\) Average log-probability (train)
-
-> -208.86781311035156 -414.5937194824219 Average log-probability (test)
->
-> -224.47113037109375 -384.385009765625
-
-||
-||
-||
-
-<u>LLM USE</u>
-
-LLMs assisted in this exercise in the following ways:
-
-> ● Code: LLMs helped write and refactor code.
->
-> ● Plots: LLMs generated code for visualizations like loss curves and
-> reconstructions.
-
-LLMs were particularly useful for:
-
-> ● Refactoring code for multiple inputs.
