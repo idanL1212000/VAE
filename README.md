@@ -4,7 +4,7 @@
 style="width:7.1875in;height:2.78125in" />
 
 <h2>VAE</h2>
-
+<h3>Amortized</h3>
 <img src="./results/amortized/loss_curves.png"
 style="width:7.1875in;height:2.78125in" />
 <p>The total loss and MSE decrease significantly in the first 10 epochs and then plateau, 
@@ -20,32 +20,28 @@ style="width:7.1875in;height:2.78125in" />
 <img src="./results/amortized/val_reconstructions_all_epochs.png"
 style="width:7.1875in;height:2.78125in" />
 
-Epoch 1: Reconstructions are blurry, barely resembling digits.
-
-Epoch 5-10: Shapes become sharper, and digit identity is typically
+<p>Epoch 1: Reconstructions are blurry, barely resembling digits.</p>
+<p>Epoch 5-10: Shapes become sharper, and digit identity is typically
 preserved. Epoch 20-30: Reconstructions continue to get better, with
-strong fidelity to input.
-
-The small discrepancy in MSE and visually similar quality of
+strong fidelity to input.</p>
+<p>The small discrepancy in MSE and visually similar quality of
 reconstruction for training and validation samples shows that the model
-did not overfit the training data significantly.
+did not overfit the training data significantly.</p>
+<p>We can also see that in both of the given 10 digits the model gets 1
+wrong and at different values</p>
 
-We can also see that in both of the given 10 digits the model gets 1
-wrong and at different values
+<h4>Sampling:</h4>
+<img src="./results/amortized/samples_all_epochs.png"
+style="width:7.1875in;height:2.78125in" />
 
-<img src="./iuqcspxi.png"
-style="width:6.27083in;height:1.875in" /><img src="./rlqqv3bv.png"
-style="width:6.27083in;height:3.19792in" />
+<h3>Latent Optimization</h3>
+<h4>Training:</h4>
+<img src="./results/latent_optimization/train_reconstructions_all_epochs.png"
+style="width:7.1875in;height:2.78125in" />
+<h4>Validation:</h4>
+<img src="./results/latent_optimization/val_reconstructions_all_epochs.png"
+style="width:7.1875in;height:2.78125in" />
 
-Q2:
-
-q3 Training:
-
-<img src="./afq3ln3x.png"
-style="width:6.125in;height:3.21875in" />Validation:
-
-<img src="./dklt13x1.png"
-style="width:6.27083in;height:1.875in" /><img src="./adln5ej1.png" style="width:6.27083in;height:1.25in" />
 
 The latent optimization VAE produces reconstructions that often fail to
 preserve the digit's class. The digits are frequently distorted and
