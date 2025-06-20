@@ -1,3 +1,4 @@
+<html>
 <head>
   <style>
     img {
@@ -8,7 +9,7 @@
     }
   </style>
 </head>
-
+<body>
 <h2>Supervised Classification</h2>
 
 <img src="./results/cnn/validation_metrics_CNN.png"/>
@@ -153,5 +154,6 @@ the latent optimization approach. This
 mismatch suggests the model may have 
 overfitted badly to the training images. </p>
 
-
+</body>
+</html>
 
