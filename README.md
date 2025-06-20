@@ -42,29 +42,28 @@ style="width:7.1875in;height:2.78125in" />
 <img src="./results/latent_optimization/val_reconstructions_all_epochs.png"
 style="width:7.1875in;height:2.78125in" />
 
+<p>The latent optimization VAE produces reconstructions that often fail to 
+preserve the digit's class. The digits are frequently distorted and 
+unrecognizable. This indicates that it can lead to representations that sacrifice 
+semantic meaning and class information.</p>
+<p>So we can conclude that the amortized VAE produces better *q* vectors
+mainly in terms of preserving the class identity of the digits.</p>
 
-The latent optimization VAE produces reconstructions that often fail to
-preserve the digit's class. The digits are frequently distorted and
-unrecognizable. This indicates that it can lead to representations that
-sacrifice semantic meaning and class information.
+<h4>Sampling:</h4>
+<img src="./results/latent_optimization/samples_all_epochs.png"
+style="width:7.1875in;height:2.78125in" />
 
-So we can conclude that the amortized VAE produces better *q* vectors
-mainly in terms of preserving the class identity of the digits.
-
-Samples:
-
-The samples from the latent optimization VAE are poor but appear like
+<p>The samples from the latent optimization VAE are poor but appear like
 recognizable digits. They appear like blurry digits resembling some time
 to more than one, in compression the samples from the amortized VAE are
 recognizable digits resembling only one digit, with some light
-blurriness.
-
-The initialization was sufficient, we can see that in some cases we
+blurriness.</p>
+<p>The initialization was sufficient, we can see that in some cases we
 start the same and have the same latent vectors. We in both cases get
 reasonable latent vectors and in the amortized we even get good
-predictions.
+predictions.</p>
 
-Q4 (a)<u>Amortized</u>
+<h3>Computing the log-probability of an image</h3>
 
 > <img src="./ip4l4l03.png" style="width:6.27083in;height:1.25in" /><u>Latent
 > Optimization</u>
