@@ -2,11 +2,8 @@
 <html>
 <head>
   <style>
-    img {
-      max-width: 70%;
-      height: auto;
-      display: block;
-      margin: 1em 0;
+    h2{
+      color:red;
     }
   </style>
 </head>
