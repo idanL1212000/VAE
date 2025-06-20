@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    h2{
-      color:red;
-    }
-  </style>
-</head>
-<body>
+
 <h2>Supervised Classification</h2>
 
-<img src="./results/cnn/validation_metrics_CNN.png"/>
+<img src="./results/cnn/validation_metrics_CNN.png" 
+  style="max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;"/>
 
 <h2>VAE</h2>
 <h3>Amortized</h3>
@@ -152,6 +147,4 @@ the latent optimization approach. This
 mismatch suggests the model may have 
 overfitted badly to the training images. </p>
 
-</body>
-</html>
 
