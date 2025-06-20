@@ -1,11 +1,16 @@
+<style>
+  img {
+    width:7in;
+    height:2.6in;
+  }
+</style>
 <h2>Supervised Classification</h2>
 
-<img src="./results/cnn/validation_metrics_CNN.png" style="width:7in;height:2.6in" />
+<img src="./results/cnn/validation_metrics_CNN.png"/>
 
 <h2>VAE</h2>
 <h3>Amortized</h3>
-<img src="./results/amortized/loss_curves.png"
-style="width:7.1875in;height:2.78125in" />
+<img src="./results/amortized/loss_curves.png"/>
 <p>The total loss and MSE decrease significantly in the first 10 epochs and then plateau, 
 indicating successful training.</p>
 <p>The KL divergence increases steadily and plateaus, as wanted with better latent 
