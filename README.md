@@ -1,8 +1,11 @@
 <style>
   img {
-    width:7in;
-    height:2.6in;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
   }
+</style>
 </style>
 <h2>Supervised Classification</h2>
 
