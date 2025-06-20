@@ -1,4 +1,4 @@
-<u>Supervised Classification</u>
+<h2>Supervised Classification</h2>
 
 <img src="./results/cnn/validation_metrics_CNN.png"
 style="width:7.1875in;height:2.78125in" /><img src="./g5k5uwcj.png"
