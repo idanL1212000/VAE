@@ -2,7 +2,7 @@
 <h2>Supervised Classification</h2>
 
 <img src="./results/cnn/validation_metrics_CNN.png" 
-  style="max-width: 100%;
+  style="max-width: 70%;
     height: auto;
     display: block;
     margin: 1em 0;"/>
