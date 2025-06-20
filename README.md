@@ -1,6 +1,6 @@
 <h2>Supervised Classification</h2>
 
-<img src="./results/cnn/validation_metrics_CNN.png" style="width:7in;height:2.5in" />
+<img src="./results/cnn/validation_metrics_CNN.png" style="width:7.1in;height:2.6in" />
 
 <h2>VAE</h2>
 <h3>Amortized</h3>
