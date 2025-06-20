@@ -1,12 +1,14 @@
-<style>
-  img {
-    max-width: 70%;
-    height: auto;
-    display: block;
-    margin: 1em 0;
-  }
-</style>
-</style>
+<head>
+  <style>
+    img {
+      max-width: 70%;
+      height: auto;
+      display: block;
+      margin: 1em 0;
+    }
+  </style>
+</head>
+
 <h2>Supervised Classification</h2>
 
 <img src="./results/cnn/validation_metrics_CNN.png"/>
