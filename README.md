@@ -64,11 +64,33 @@ reasonable latent vectors and in the amortized we even get good
 predictions.</p>
 
 <h3>Computing the log-probability of an image</h3>
-<h4>Amortized</h4>
+<h5>Amortized</h5>
 <img src="./results/amortized/digit_log_probabilities.png"
 style="width:7.1875in;height:2.78125in" />
-<h4>Latent Optimization</h4>
+<h5>Latent Optimization</h5>
 <img src="./results/latent_optimization/digit_log_probabilities.png"
 style="width:7.1875in;height:2.78125in" />
+
+<h4>Average log-probabilities per digit </h4>
+<h5>Amortized</h5>
+<table>
+  <tr>
+    <th>Digit</th>
+    <th>Amortized</th>
+    <th>Latent Optimization</th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>-217.58871459960938 </td>
+    <td>-514.7296142578125</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>-68.08492279052734</td>
+    <td>-137.36550903320312</td>
+  </tr>
+</table>
+
+
 
 
