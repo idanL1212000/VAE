@@ -18,11 +18,9 @@ regularization.</p>
 <p>The gap between training and validation loss is small, pointing to no harsh overfitting.</p> 
 
 <h4>Training:</h4>
-<img src="./results/amortized/train_reconstructions_all_epochs.png"
-style="width:7.1875in;height:2.78125in" />
+<img src="./results/amortized/train_reconstructions_all_epochs.png"/>
 <h4>Validation:</h4>
-<img src="./results/amortized/val_reconstructions_all_epochs.png"
-style="width:7.1875in;height:2.78125in" />
+<img src="./results/amortized/val_reconstructions_all_epochs.png"/>
 
 <p>Epoch 1: Reconstructions are blurry, barely resembling digits.</p>
 <p>Epoch 5-10: Shapes become sharper, and digit identity is typically
@@ -35,16 +33,13 @@ did not overfit the training data significantly.</p>
 wrong and at different values</p>
 
 <h4>Sampling:</h4>
-<img src="./results/amortized/samples_all_epochs.png"
-style="width:7.1875in;height:2.78125in" />
+<img src="./results/amortized/samples_all_epochs.png"/>
 
 <h3>Latent Optimization</h3>
 <h4>Training:</h4>
-<img src="./results/latent_optimization/train_reconstructions_all_epochs.png"
-style="width:7.1875in;height:2.78125in" />
+<img src="./results/latent_optimization/train_reconstructions_all_epochs.png"/>
 <h4>Validation:</h4>
-<img src="./results/latent_optimization/val_reconstructions_all_epochs.png"
-style="width:7.1875in;height:2.78125in" />
+<img src="./results/latent_optimization/val_reconstructions_all_epochs.png"/>
 
 <p>The latent optimization VAE produces reconstructions that often fail to 
 preserve the digit's class. The digits are frequently distorted and 
@@ -54,8 +49,7 @@ semantic meaning and class information.</p>
 mainly in terms of preserving the class identity of the digits.</p>
 
 <h4>Sampling:</h4>
-<img src="./results/latent_optimization/samples_all_epochs.png"
-style="width:7.1875in;height:2.78125in" />
+<img src="./results/latent_optimization/samples_all_epochs.png"/>
 
 <p>The samples from the latent optimization VAE are poor but appear like
 recognizable digits. They appear like blurry digits resembling some time
@@ -69,11 +63,9 @@ predictions.</p>
 
 <h3>Computing the log-probability of an image</h3>
 <h5>Amortized</h5>
-<img src="./results/amortized/digit_log_probabilities.png"
-style="width:7.1875in;height:2.78125in" />
+<img src="./results/amortized/digit_log_probabilities.png"/>
 <h5>Latent Optimization</h5>
-<img src="./results/latent_optimization/digit_log_probabilities.png"
-style="width:7.1875in;height:2.78125in" />
+<img src="./results/latent_optimization/digit_log_probabilities.png"/>
 
 <h4>Average log-probabilities per digit </h4>
 <table>
