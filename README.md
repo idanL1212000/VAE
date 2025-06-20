@@ -140,7 +140,7 @@ expected: the model has directly learned
 from them, so it reconstructs them better 
 and assigns higher log-probability.</p>
 
-<h5>Train</h5>
+<h5>Test</h5>
 <p>Amortized: -414.5937194824219</p>
 <p>Unexpectedly, test images are more likely. 
 This may indicate overfitting or instability in 
