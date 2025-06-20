@@ -147,6 +147,7 @@ and assigns higher log-probability.</p>
 
 <h5>Test</h5>
 <p>Amortized: -414.5937194824219</p>
+<p>Latent Optimization: -384.385009765625</p>
 <p>Unexpectedly, test images are more likely. 
 This may indicate overfitting or instability in 
 the latent optimization approach. This 
