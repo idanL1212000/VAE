@@ -1,6 +1,6 @@
 <style>
   img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
     display: block;
     margin: 1em 0;
