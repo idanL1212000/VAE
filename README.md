@@ -6,7 +6,8 @@
 
 <h2>VAE</h2>
 <h3>Amortized</h3>
-<img src="./results/amortized/loss_curves.png"/>
+<img src="./results/amortized/loss_curves.png"
+  style="width: 80%;height: auto;"/>
 <p>The total loss and MSE decrease significantly in the first 10 epochs and then plateau, 
 indicating successful training.</p>
 <p>The KL divergence increases steadily and plateaus, as wanted with better latent 
