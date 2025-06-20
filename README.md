@@ -72,7 +72,6 @@ style="width:7.1875in;height:2.78125in" />
 style="width:7.1875in;height:2.78125in" />
 
 <h4>Average log-probabilities per digit </h4>
-<h5>Amortized</h5>
 <table>
   <tr>
     <th>Digit</th>
@@ -89,8 +88,69 @@ style="width:7.1875in;height:2.78125in" />
     <td>-68.08492279052734</td>
     <td>-137.36550903320312</td>
   </tr>
+  <tr>
+    <td>2</td>
+    <td>-295.7515869140625</td>
+    <td>-484.9649963378906</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>-238.4097900390625</td>
+    <td>-428.3619079589844</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>-206.52548217773438</td>
+    <td>-330.36676025390625</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>-301.0711975097656</td>
+    <td>-484.19464111328125</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>-231.7938690185547</td>
+    <td>-463.27215576171875</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>-144.23634338378906</td>
+    <td>-324.5142517089844</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>-295.1378479003906</td>
+    <td>-478.99755859375 </td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>-161.9153289794922</td>
+    <td>-375.8153991699219</td>
+  </tr>
 </table>
+<p> Digit 1 has the highest (least negative) log-probability in both cases.Digit 1 
+has a very consistent and simple structure (a vertical line), which the VAE can 
+model well, leading to higher log-probability.More complex digits (like 2, 5, 8) 
+show greater variability and are harder to model, resulting in lower 
+log-probabilities.</p>
 
+<h4>Average log-probabilities</h4>
+<h5>Train</h5>
+<p>Amortized: -208.86781311035156</p>
+<p>Latent Optimization: -208.86781311035156</p>
+<p>Training images are more likely. This is 
+expected: the model has directly learned 
+from them, so it reconstructs them better 
+and assigns higher log-probability.</p>
+
+<h5>Train</h5>
+<p>Amortized: -414.5937194824219</p>
+<p>Unexpectedly, test images are more likely. 
+This may indicate overfitting or instability in 
+the latent optimization approach. This 
+mismatch suggests the model may have 
+overfitted badly to the training images. </p>
 
 
 
